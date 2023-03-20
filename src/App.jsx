@@ -1,11 +1,10 @@
 import React from 'react'
-import reactLogo from '/assets/react.svg'
-
+import Navbar from './Navbar'
 
 export default function App() {
   return (
     <>
-     <p>test</p>      
+     <Navbar />      
     </>
   )
 }
