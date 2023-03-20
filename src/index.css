@@ -18,37 +18,23 @@ body {
   margin: 0;  
 }
 
-main {
-  max-width: 500px;
-  display: block;
-  margin: 0 auto;
-}
-
-.nav-bar,
-.nav-logo{
+.header-bar,
+.header-logo{
   display: flex;
   align-items: center;
   justify-content: space-between;  
 }
 
-.nav-bar {
+.header-bar {
+  margin: 0 auto;
   color: #FFFFFF;
   padding: 20px;
   background-image: var(--gradient);
+  max-width: 550px;
 }
 
 .logo-img {
   width: 31px;
   height: 26px;
   margin-right: 7px;
-}
-
-.logo-text {
-  font-weight: 700;
-  font-size: 20.75px;
-}
-
-.nav-course {
-  font-weight: 500;
-  font-size: 12px;
 }
