@@ -1,10 +1,34 @@
 import React from 'react'
-import ReactDOM from 'react-dom/client'
-import App from './App'
-import './index.css'
+import memesData from './memesData'
 
-ReactDOM.createRoot(document.getElementById('root')).render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-)
+export default function Main() {
+
+    function getMemeImage() {
+        const memesArray = memesData.data.memes
+        const randomNumber = Math.floor(Math.random() * memesArray.length)
+        console.log(randomNumber)
+    }
+
+  return (
+    <main>
+            <div className="form">
+                <input 
+                    type="text"
+                    placeholder="Top text"
+                    className="form-input"
+                />
+                <input 
+                    type="text"
+                    placeholder="Bottom text"
+                    className="form-input"
+                />
+                <button 
+                    className="form-button"
+                    onClick={getMemeImage}
+                >
+                    Get a new meme image 🖼
+                </button>
+            </div>
+        </main>    
+  )
+}
